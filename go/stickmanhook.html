@@ -1,0 +1,299 @@
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>stickmanhook</title>
+<meta name="description" content="stickmanhook"">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no" />
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?1ssa" />
+<link rel="stylesheet" type="text/css" href="../css/style.css?1716373299" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="../img/icon.png" sizes="32x32">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+<script type="text/javascript" src="../js/jquery-3.6.2.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+ 
+ 
+ 
+ 
+		</head>
+	<body id="page-top">
+
+  <style type="text/css">
+.mry_1 {
+    margin-top: 15px !important;
+	    width: 300px;
+    height: 250px;
+	text-align:center;
+	margin:0 auto;
+}
+.mry_2 {
+    margin-top: 15px !important;
+    width: 970px;
+	text-align:center;
+    height: 250px;
+	margin:0 auto;
+}
+</style>
+
+<script>
+	function getScript(src) {
+    var headElm = document.head || document.getElementsByTagName('head')[0];
+    var script = document.createElement("script");
+    var once = true;
+    script.async = "async";
+    script.type = "text/javascript";
+    script.charset = "UTF-8";
+    script.src = src;
+    script.onload = script.onreadystatechange = function() {
+        if (once && (!script.readyState || /loaded|complete/.test(script.readyState))) {
+            once = false;         
+            script.onload = script.onreadystatechange = null;
+			console.log("okeey");
+        }
+    };
+	  headElm.appendChild(script);
+}
+
+ 
+	getScript("https://api.adinplay.com/libs/aiptag/pub/GRL/paperio3.com/tag.min.js");
+ 
+	window.aiptag = window.aiptag || {cmd: []};
+	aiptag.cmd.display = aiptag.cmd.display || [];
+	aiptag.cmd.player = aiptag.cmd.player || [];
+
+	//CMP tool settings
+	aiptag.cmp = {
+		show: true,
+		position: "centered",  //centered, bottom
+		button: true,
+		buttonText: "Privacy settings",
+		buttonPosition: "bottom-left" //bottom-left, bottom-right, top-left, top-right
+	}
+
+	aiptag.cmd.player.push(function() {
+		aiptag.adplayer = new aipPlayer({
+			AD_WIDTH: 960,
+			AD_HEIGHT: 540,
+			AD_DISPLAY: 'center', //default, fullscreen, center, fill
+			LOADING_TEXT: 'loading advertisement',
+			PREROLL_ELEM: function(){return document.getElementById('preroll')},
+			AIP_COMPLETE: function (evt){
+				
+   skip_play();
+ 			},
+			AIP_REMOVE: function ()  {
+				// Here it's safe to remove the PREROLL_ELEM from the page if you want. But it's not recommend.
+			}
+		});
+	});
+	
+	 
+ 
+				function show_preroll() {
+ 					if (typeof aiptag.adplayer !== 'undefined') {
+				 	aiptag.cmd.player.push(function() { aiptag.adplayer.startPreRoll(); });
+					} else {
+				    	
+   skip_play();
+ 
+					}
+				}
+	
+</script>
+
+
+<div id="preroll"></div>
+		<nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav">
+	<div class="container">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		<a class="navbar-brand js-scroll-trigger logotext" href="/">Paperio 3</a>
+		<div class="navbar-collapse collapse" id="nav-menu">
+			<ul class="navbar-nav">
+				 
+				<li class="nav-item "><a target="_blank" class="nav-link" href="https://policies.google.com/privacy?hl=en-US">Privacy Policy</a></li>
+				<li class="nav-item "><a target="_blank" class="nav-link" href="https://policies.google.com/terms?hl=en-US">Terms Of Service</a></li>
+				<li class="nav-item "><a target="_blank" class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdi3cR24vUZMm0AMvFd_KJBEJ0O7wFpNKNPBArZWG1JzleDcg/viewform?pli=1">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>		
+		<div class="container lessons-wrapper">
+		
+		
+         <div id='paperio3-com_300x250_2' class='mry_2'>
+			<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('paperio3-com_300x250_2'); });
+			</script>
+         </div>		<br>
+	<div class="lessons-container">
+	<div class="kap"></div>
+	
+	
+	
+	
+	
+		<div class="lessons-content" data-id="51">
+		
+		<div class="skip_screen">
+			<img src="https://geometry-lessons.github.io/repo/img/stickmanhook.png">
+			
+			<div onclick="show_preroll();" class="skip_play">PLAY</div>
+		
+		
+         <div id='paperio3-com_300x250' class='mry_1'>
+			<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('paperio3-com_300x250'); });
+			</script>
+         </div>		</div>
+		
+		
+		
+			<div id="allow_mobile_version"></div>			
+			<div id="mobile-play" style="display: none;">
+				<div class="mobile-thumb-play">
+					<img src="https://geometry-lessons.github.io/repo/img/stickmanhook.png">
+				</div>
+				<div id="mobile-play-btn">
+					<i class="bi bi-play-circle-fill"></i> 
+				</div>
+			</div>
+			<div class="lessons-iframe-container" id="lessons-player">
+				<div id="mobile-back-button" draggable="true">
+					<i class="bi bi-x-circle-fill"></i>
+				</div>
+				<iframe class="lessons-iframe" id="lessons-area" src="" width="720" height="1080" scrolling="none" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="lessons-info">
+			<div class="header-left">
+				
+			
+			</div>
+			<div class="header-right">
+				<div class="b-action2">
+					<a onclick="acamkiti('https://geometry-lessons.github.io/repo/games/stickmanhook');" href="#" target="_blank" class="btn btn-capsule"><i class="bi bi-window-stack b-icon"></i>Open in new window</a>
+					<a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i class="bi bi-arrows-fullscreen b-icon"></i>Fullscreen</a>
+				</div>
+			</div>
+		</div>
+		
+		
+	</div>
+
+		<span class="makalele"> 
+		
+ 
+
+
+				</span>
+</div>
+
+
+
+<script>
+	 
+      
+	  function acamkiti(x){
+            var win;
+
+           // document.querySelector('button').onclick = function() {
+                if (win) {
+                    win.focus();
+                } else {
+                    win = window.open();
+                    win.document.body.style.margin = '0';
+                    win.document.body.style.height = '100vh';
+                    var iframe = win.document.createElement('iframe');
+                    iframe.style.border = 'none';
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+                    iframe.style.margin = '0';
+                    iframe.src = x;
+                    win.document.body.appendChild(iframe);
+                    
+
+                    var interval = setInterval(function() {
+                        if (win.closed) {
+                            clearInterval(interval);
+                            win = undefined;
+
+                        }
+                    }, 500);
+
+
+                }
+         //   };
+	  }
+    
+	</script>
+	
+	
+
+<div class="container">
+		<div class="content-wrapper">
+		<div class="row">
+			<div class="col-md-12 lessons-content">
+
+				<div class="single-description">
+					 
+				</div>
+				<br>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+  
+<div class="footer-copyright py-4">
+	<div class="container">
+		 
+ &copy; 2024 - Paperio 3 Unblocked School Games		
+		</div>
+</div>
+
+ 
+ 
+ 
+
+ 
+ <!-- Google tag (gtag.js) -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-PY05BQ5V92'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PY05BQ5V92');
+</script>
+ 
+ 
+ 
+
+			<script type="text/javascript">
+						function skip_play(){
+							console.log("skipped");
+							$(".skip_screen").hide();
+							$(".kap").hide();
+							var lesson_link = "https://geometry-lessons.github.io/repo/games/"+atob('c3RpY2ttYW5ob29r');
+							$("#lessons-area").attr("src",lesson_link);				
+						}
+						
+						
+			
+			</script>
+  </body>
+</html>

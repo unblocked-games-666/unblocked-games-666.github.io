@@ -1,0 +1,1018 @@
+body {
+    font-family: Poppins, sans-serif;
+    background-size: cover;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    color: rgb(68, 68, 68);
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.top-nav {
+    margin-bottom: 40px;
+    background-color: rgb(0, 0, 0);
+    padding: 10px 0px;
+}
+
+.top-nav a {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+.navbar-nav {
+}
+
+.dropdown-menu {
+    background: rgb(59, 50, 85);
+}
+
+.dropdown-menu .dropdown-item {
+    padding: 15px 25px;
+}
+
+ul.user-links {
+    background: rgb(59, 50, 85);
+    z-index: 20;
+}
+
+ul.user-links li {
+    color: unset;
+}
+
+.search-bar {
+    max-width: 200px;
+    margin-left: auto;
+    position: relative;
+}
+
+.search-bar input.search {
+    text-indent: 28px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    height: 50px;
+    margin-bottom: 0px;
+    border-radius: 25px !important;
+}
+
+.search-bar .bi-search {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 14px;
+    left: 15px;
+}
+
+.search-bar .form-control::placeholder {
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+.category-description {
+    padding: 20px;
+    margin: 20px 0px 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-left-width: 5px;
+    border-radius: 3px;
+    border-left-color: rgb(91, 192, 222);
+}
+
+.pagination-wrapper {
+    margin-top: 20px;
+}
+
+.pagination .page-link {
+    background: rgb(127, 89, 142);
+    color: rgb(255, 255, 255);
+    border: 0px;
+    padding: 10px 18px;
+}
+
+.page-link:hover {
+    background: rgb(87, 66, 96);
+}
+
+.pagination .disabled .page-link {
+    background: rgb(80, 55, 89);
+}
+
+.single-title, .page-title {
+    font-size: calc(1.3rem + 0.6vw);
+    color: rgb(255, 255, 255);
+}
+
+.item-title {
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.grid-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.img-rounded {
+    border-radius: 10px;
+}
+
+.small-thumb {
+    width: 100%;
+    height: 150px;
+}
+
+.list-info {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, -50%);
+}
+
+.list-title {
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 22px;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    background: rgb(255, 255, 255);
+    padding: 0px 12px;
+}
+
+.list-category {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.lesson-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-2 .lesson-item:hover, .grid-3 .lesson-item:hover, .list-vertical:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.list-lessons {
+    width: 100%;
+    position: relative;
+}
+
+.list-lessons-x:hover {
+    padding: 10px;
+    background-color: rgb(238, 240, 242);
+    border-radius: 10px;
+    scale: 1.2;
+}
+
+.list-rating {
+    font-size: 14px;
+}
+
+.gamelist-vertical-widget .list-thumbnail {
+    max-width: 80px;
+    float: left;
+    margin-right: 15px;
+}
+
+.grid-1 .list-lessons {
+    margin-bottom: 40px;
+}
+
+.grid-1 .list-info {
+    overflow: hidden;
+    margin: 0.35714em 0.35714em -53px;
+    color: rgb(255, 255, 255);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    bottom: 65px;
+    opacity: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.grid-2 {
+    margin-bottom: 20px;
+}
+
+.grid-2 .list-thumbnail {
+    max-width: 100px;
+    float: left;
+    margin-right: 15px;
+}
+
+.grid-2 .list-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.grid-3 .list-lessons {
+    background: rgba(225, 225, 225, 0.15);
+    border-radius: 15px;
+}
+
+.grid-3 .list-thumbnail {
+    overflow: hidden;
+    margin: 0px;
+}
+
+.grid-3 .list-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.grid-3 .list-category, .gamelist-vertical-widget .list-category {
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.grid-3 .list-lessons {
+    overflow: hidden;
+}
+
+.grid-3 .list-info {
+    padding: 10px;
+}
+
+.grid-3 {
+    margin-bottom: 20px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .grid-1 .list-lessons:hover > .list-info {
+        opacity: 1;
+        transition: all 0.5s ease 0s;
+    }
+
+    .list-thumbnail:hover {
+        opacity: 0.5;
+        transition: all 0.5s ease 0s;
+    }
+}
+
+.list-1 .list-thumbnail {
+    max-width: 90px;
+    margin-right: 15px;
+}
+
+.list-1 .list-thumbnail img {
+    border-radius: 50%;
+}
+
+.row-list-1 {
+    position: relative;
+}
+
+.list-1-wrapper {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 70px;
+}
+
+.list-1-wrapper .lesson-item {
+    display: inline-block;
+    text-align: center;
+}
+
+.footer {
+    padding: 40px 0px;
+}
+
+.border-line {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dsb-panel {
+    float: right;
+}
+
+.footer-copyright {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.header-area {
+    margin-bottom: 40px;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+.masthead-title {
+    color: rgb(255, 255, 255);
+}
+
+.masthead-description {
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.masthead-description h3 {
+    font-size: 20px;
+}
+
+ul.list-categories {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+}
+
+ul.list-categories li {
+    padding: 10px 15px;
+    background-color: rgb(201, 210, 213);
+    border-radius: 15px;
+    margin-right: 12px;
+    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.widget .category-wrapper {
+    float: none;
+    margin-right: 0px;
+}
+
+.widget ul.category-item {
+    width: 100%;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.category-item li {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.category-item li:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+ul.category-list-wrapper {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul.category-list-wrapper .cat-item {
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    width: 155px;
+    color: rgb(79, 80, 83);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+ul.category-list-wrapper .cat-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cat-name {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.cat-game-amount {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.icon-category {
+    margin-right: 8px;
+}
+
+.category-list-global .icon-category {
+    float: left;
+}
+
+ul.category-list-lessons .icon-category {
+    float: none;
+}
+
+ul.category-list-lessons {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.category-list-lessons .cat-item {
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+    color: rgb(79, 80, 83);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+ul.category-list-lessons .cat-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.cat-info {
+    margin-top: 5px;
+}
+
+.lessons-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 18px 18px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    margin: 10px 0px;
+}
+
+.header-right {
+    margin-left: auto;
+    text-align: right;
+}
+
+.header-right .btn, .header-right .social-icon {
+    margin-top: 10px;
+}
+
+.lessons-iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 570px;
+}
+
+.lessons-iframe {
+    position: absolute;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.widget-title {
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.btn-default {
+    border: 1px solid rgb(189, 192, 193);
+    background-color: rgb(255, 255, 255);
+}
+
+.b-left {
+    position: absolute;
+    top: 20px;
+}
+
+.b-right {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.btn-primary {
+    background-color: rgb(1, 182, 255);
+    border-color: rgb(19, 165, 223);
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        background-size: contain;
+    }
+
+    .search-bar {
+        max-width: 100%;
+    }
+
+    .nav-item {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .top-user {
+        width: 80px;
+        margin: 10px;
+    }
+
+    .leaderboard-cell.user-xp {
+        margin-top: 12px;
+        position: absolute;
+        right: 20px;
+    }
+
+    .leaderboard-cell.rank {
+        display: none;
+    }
+
+    .post-media .post-thumb {
+        float: none;
+        overflow: unset;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        width: unset;
+    }
+
+    .post-media .post-thumb img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.dropdown-icon {
+    display: inline-block;
+    margin-left: 0.455em;
+    vertical-align: 0.255em;
+    content: "";
+    border-width: 0.3em 0.3em 0px;
+    border-top-style: solid;
+    border-top-color: initial;
+    border-right-style: solid;
+    border-right-color: transparent;
+    border-bottom-style: initial;
+    border-bottom-color: initial;
+    border-left-style: solid;
+    border-left-color: transparent;
+}
+
+.btn-load-more {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgb(255, 255, 255);
+    padding: 14px 50px;
+    border-radius: 40px;
+}
+
+.b-load-more {
+    margin-bottom: 40px;
+}
+
+.btn-load-more:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.header-right .btn-capsule, .header-right .btn-share {
+    margin-left: 10px;
+}
+
+.btn-circle {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 10px 15px;
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+.btn-capsule {
+    background: rgb(214, 100, 14);
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+.btn-capsule:hover, .btn-capsule.active, .btn-circle:hover {
+    background: rgb(82, 109, 215);
+    color: rgb(255, 255, 255);
+}
+
+.b-white {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+.b-login {
+    margin-left: 10px;
+}
+
+.star-on {
+    color: rgb(255, 167, 63);
+    margin-right: 4px;
+}
+
+.star-off {
+    color: rgb(92, 91, 95);
+    margin-right: 4px;
+}
+
+.b-icon {
+    margin-right: 8px;
+}
+
+.content-wrapper {
+    margin-top: 40px;
+}
+
+.highlight-text {
+    color: rgb(255, 255, 255);
+}
+
+.list-vertical {
+    margin-bottom: 20px;
+}
+
+.jquery-comments .textarea-wrapper .textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: 0px;
+    border-radius: 8px;
+}
+
+.comments-container {
+    border: 0px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
+}
+
+.jquery-comments ul.navigation {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.jquery-comments ul.navigation li.active, .jquery-comments ul.navigation li:hover {
+    color: unset;
+}
+
+.jquery-comments .textarea-wrapper::before, .jquery-comments .textarea-wrapper::after {
+    display: none;
+}
+
+.jquery-comments .textarea-wrapper .control-row > span {
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.post-title {
+    font-size: 25px;
+}
+
+.post-thumb {
+    float: right;
+    width: 200px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.post-thumb img {
+    height: 180px;
+    max-width: unset;
+}
+
+.post-item {
+    display: flex;
+}
+
+.post-media {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.post-title a {
+    color: rgb(255, 255, 255);
+}
+
+.post-meta {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.page-content {
+    margin-top: 40px;
+}
+
+.user-page {
+    background: unset;
+}
+
+.user-page .section {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profile-comment-item {
+    border-width: 1px 0px 0px;
+    border-right-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image: initial;
+    border-top-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.1);
+    border-radius: unset;
+}
+
+.user-page .comment-text {
+    color: rgb(255, 255, 255);
+}
+
+.user-page .comment-date.text-secondary {
+    color: unset !important;
+}
+
+input.form-control {
+    margin-bottom: 10px;
+}
+
+#mobile-back-button {
+    display: none;
+    align-items: center;
+    position: fixed;
+    z-index: 101;
+    top: 100px;
+    left: 0px;
+    width: 56px;
+    height: 46px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 16px 32px;
+    border-radius: 0px 16px 16px 0px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#mobile-back-button i {
+    color: rgb(148, 162, 162);
+    font-size: 30px;
+    margin-left: 14px;
+}
+
+.btn-left, .btn-right {
+    z-index: 1;
+}
+
+.login-form, .register-form {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-thumb-play img {
+    width: 100%;
+    opacity: 0.7;
+}
+
+.mobile-thumb-play {
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+#mobile-play {
+    position: relative;
+}
+
+#mobile-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+}
+
+.lessons-container {
+    overflow: hidden;
+    border-radius: 18px;
+    position: relative;
+}
+
+.color-red {
+    background: rgba(238, 19, 39, 0.4);
+}
+
+.top-3 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.top-user {
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.top-number {
+    width: 40px;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+.top-avatar img {
+    border-radius: 50%;
+    display: block;
+}
+
+.rank-1 .top-avatar img {
+    width: 120px;
+}
+
+.leaderboard-table {
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+.leaderboard-row {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 15px;
+    white-space: nowrap;
+}
+
+.leaderboard-cell {
+    vertical-align: middle;
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+.leaderboard-user-avatar img {
+    width: 50px;
+    border-radius: 50%;
+    display: block;
+}
+
+.leaderboard-cell.username {
+    font-weight: bold;
+    min-width: 160px;
+}
+
+.leaderboard-cell.rank {
+    float: right;
+}
+
+.level-badge {
+    float: left;
+    margin-right: 10px;
+}
+
+.top-player-wrapper {
+    margin-bottom: 20px;
+}
+
+.gamelist-widget .list-lessons {
+    margin-bottom: 20px;
+}
+
+#nav-menu {
+    justify-content: right;
+}
+
+.kap {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #eee;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.skip_screen {
+    position: absolute;
+    z-index: 10001;
+    margin: 0px auto;
+    left: 50%;
+    display: grid;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    justify-content: center !important;
+}
+
+.skip_play:hover {
+    cursor: pointer;
+    background: rgb(56, 171, 28);
+}
+
+.skip_play {
+    background: rgb(161, 255, 105);
+    width: 100px;
+    margin: 0px auto;
+    padding: 1px 5px;
+    font-size: 26px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: rgb(45, 45, 45);
+}
+
+.skip_screen img {
+    margin: 0px auto;
+    border-radius: 10px;
+}
+
+ul.less_list img {
+    width: 180px;
+    border-radius: 10px;
+    height: 160px;
+    box-shadow: rgba(0, 0, 0, 0.114) 0px 0.2125rem 0.9425rem !important;
+}
+
+ul.less_list .title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    white-space: nowrap;
+    border-radius: 10px;
+    text-decoration: none !important;
+}
+
+ul.less_list {
+    list-style: none;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+ul.less_list li:hover .title {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    transition: all 0.3s ease 0s;
+}
+
+ul.less_list li h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ul.less_list li {
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    position: relative;
+    align-items: center;
+    font-family: Poppins;
+    transition: all 0.3s ease 0s;
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    grid-auto-flow: column;
+    text-decoration: none !important;
+    font-size: 15px !important;
+}
+
+ul.less_list li:hover {
+    color: rgb(0, 0, 0);
+    z-index: 100;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+
+.logotext {
+    font-weight: 700;
+    font-size: 35px !important;
+}
+
+.makalele{
+	padding: 20px;
+    margin-top: 15px;
+    background: #eee;
+    display: inline-block;
+    border-radius: 10px;
+    color: #353535;
+	
+}
