@@ -1,7 +1,7 @@
 google.com, pub-7233485374797646, DIRECT, f08c47fec0942fa0
 
 ##################################
-# AdinPlay.com ads.txt - 2024-05-14
+# AdinPlay.com ads.txt - 2024-06-20
 ##################################
 
 OWNERDOMAIN=paperio9.com
@@ -796,5 +796,5 @@ vidazoo.com, 655c85dc63ceeb606a0f365f, DIRECT, b6ada874b4d7d0b2
 smartadserver.com, 3490, DIRECT
 
 ##################################
-# AdinPlay.com ads.txt - 2024-05-14
+# AdinPlay.com ads.txt - 2024-06-20
 ##################################

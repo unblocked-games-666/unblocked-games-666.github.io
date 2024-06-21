@@ -4,28 +4,32 @@
 <html lang="en">
 <head>
 
-<title>doodlejump</title>
-<meta name="description" content="doodlejump"">
+<title>doodle jump Unblocked</title>
 
+
+<meta name="description" content="Doodle Jump is a vertical platformer game where players control a bouncing character as they leap from platform to platform, avoiding obstacles and enemies along the way. With simple controls and addictive gameplay, players aim to reach new heights in this classic mobile game.">
+<meta property="og:image" content="https://oc-fatih.github.io/k/doodlejump.png?as">
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.9, shrink-to-fit=no" />
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?1ssa" />
-<link rel="stylesheet" type="text/css" href="../css/style.css?1716373295" />
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+ <link rel="stylesheet" type="text/css" href="/stil.css?1718971607" />
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="icon" href="../img/icon.png" sizes="32x32">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+ 
+ 
+  
+<link rel="icon" href="img/icon.png" sizes="32x32">
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-<script type="text/javascript" src="../js/jquery-3.6.2.min.js"></script>
-<script type="text/javascript" src="../js/bootstrap.min.js"></script>
- 
- 
- 
- 
-		</head>
+<script type="text/javascript" src="js/jquery-3.6.2.min.js"></script>
+  
+ </head>
 	<body id="page-top">
 
   <style type="text/css">
@@ -113,25 +117,70 @@
 
 
 <div id="preroll"></div>
-		<nav class="navbar navbar-expand-lg navbar-dark top-nav" id="mainNav">
-	<div class="container">
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		<a class="navbar-brand js-scroll-trigger logotext" href="/">Paperio 3</a>
-		<div class="navbar-collapse collapse" id="nav-menu">
-			<ul class="navbar-nav">
-				 
-				<li class="nav-item "><a target="_blank" class="nav-link" href="https://policies.google.com/privacy?hl=en-US">Privacy Policy</a></li>
-				<li class="nav-item "><a target="_blank" class="nav-link" href="https://policies.google.com/terms?hl=en-US">Terms Of Service</a></li>
-				<li class="nav-item "><a target="_blank" class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdi3cR24vUZMm0AMvFd_KJBEJ0O7wFpNKNPBArZWG1JzleDcg/viewform?pli=1">Contact</a></li>
-			</ul>
+		
+<div class="top_bar">
+<a href="/"><div class="logo">PAPERIO 3</div></a>
+
+ <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search Game...">
+   
+
+	    <div style="display:none;" class="search-results" id="search-results"></div>
+
+
 		</div>
-	</div>
-</nav>		
+		
+		
+		
+		
+</div>
+ 
+ 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
+
+ <script>
+        $(document).ready(function() {
+            // JSON verisini yüklenecek değişken
+            let games = [];
+
+            // JSON dosyasını yükle
+            $.getJSON('/j.json', function(data) {
+                games = data;
+            });
+
+            // Arama fonksiyonunu tanımlayalım
+            $('#search-input').on('input', function() {
+                const input = $(this).val().toLowerCase();
+                const resultsContainer = $('#search-results');
+                resultsContainer.empty(); // Önceki sonuçları temizle
+
+                if (input.length >= 2) {
+					$(".search-results").show();
+                    const filteredGames = games.filter(game => game.oyun_adi.toLowerCase().includes(input)).slice(0, 5);
+                    
+                    filteredGames.forEach(game => {
+                        const gameElement = $('<div class="sikik_selo_liste"></div>');
+                        const gameImage = $('<img width="40">').attr('src', `/_kr/${game.oyun_url.toLowerCase()}.png`).attr('alt', game.oyun_adi);
+                        const gameLink = $('<a></a>').attr('href','/go/'+ game.oyun_url+'.html').text(game.oyun_adi);
+                        gameElement.append(gameImage).append(gameLink);
+                        resultsContainer.append(gameElement);
+                    });
+                } else {
+					$(".search-results").hide();
+				}
+            });
+        });
+    </script>  
+	
+	
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7233485374797646" crossorigin="anonymous"></script>		
 		<div class="container lessons-wrapper">
-		
-		
+		        <h1 class="section-title">doodle jump Unblocked</h1>
+
+
+ 
          <div id='paperio3-com_300x250_2' class='mry_2'>
 			<script type='text/javascript'>
 			aiptag.cmd.display.push(function() { aipDisplayTag.display('paperio3-com_300x250_2'); });
@@ -147,7 +196,7 @@
 		<div class="lessons-content" data-id="51">
 		
 		<div class="skip_screen">
-			<img src="https://geometry-lessons.github.io/repo/img/doodlejump.png">
+			<img src="https://oc-fatih.github.io/k/doodlejump.png?aaassd">
 			
 			<div onclick="show_preroll();" class="skip_play">PLAY</div>
 		
@@ -163,7 +212,7 @@
 			<div id="allow_mobile_version"></div>			
 			<div id="mobile-play" style="display: none;">
 				<div class="mobile-thumb-play">
-					<img src="https://geometry-lessons.github.io/repo/img/doodlejump.png">
+					<img src="https://oc-fatih.github.io/k/doodlejump.png?asssd">
 				</div>
 				<div id="mobile-play-btn">
 					<i class="bi bi-play-circle-fill"></i> 
@@ -183,7 +232,7 @@
 			</div>
 			<div class="header-right">
 				<div class="b-action2">
-					<a onclick="acamkiti('https://geometry-lessons.github.io/repo/games/doodlejump');" href="#" target="_blank" class="btn btn-capsule"><i class="bi bi-window-stack b-icon"></i>Open in new window</a>
+					<a onclick="acamkiti('https://oc-fatih.github.io/g/doodlejump');" href="#" target="_blank" class="btn btn-capsule"><i class="bi bi-window-stack b-icon"></i>Open in new window</a>
 					<a href="#" onclick="open_fullscreen()" class="btn btn-capsule"><i class="bi bi-arrows-fullscreen b-icon"></i>Fullscreen</a>
 				</div>
 			</div>
@@ -194,11 +243,594 @@
 
 		<span class="makalele"> 
 		
- 
+"Doodle Jump" is a vertical platformer game where players control a bouncing character as they leap from platform to platform, avoiding obstacles and enemies along the way. With simple controls and addictive gameplay, players aim to reach new heights in this classic mobile game. 
 
 
 				</span>
+			
+
+<div class="anne_baslik"><h2>SIMILAR UNBLOCKED GAMES</h2></div>
+
+			
+		    <div id="listos">
+		
+ <a href="/go/paperio2.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/paperio2.png?sas' alt='paperio 2'>
+		<h3>paperio 2</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/tunnelz.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/tunnelz.png?sas' alt='tunnelz'>
+		<h3>tunnelz</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/getaway-shootout.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/getaway-shootout.png?sas' alt='getaway shootout'>
+		<h3>getaway shootout</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/stickmanboost.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/stickmanboost.png?sas' alt='stickman boost'>
+		<h3>stickman boost</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/bearonascooter.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/bearonascooter.png?sas' alt='bear on a scooter'>
+		<h3>bear on a scooter</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/rockingskytrip.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/rockingskytrip.png?sas' alt='rocking sky trip'>
+		<h3>rocking sky trip</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/merge-round-racers.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/merge-round-racers.png?sas' alt='merge round racers'>
+		<h3>merge round racers</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/endlesswar3.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/endlesswar3.png?sas' alt='endlesswar 3'>
+		<h3>endlesswar 3</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/penoire.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/penoire.png?sas' alt='penoire'>
+		<h3>penoire</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/stickslasher.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/stickslasher.png?sas' alt='stick slasher'>
+		<h3>stick slasher</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/jetpack-joyride.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/jetpack-joyride.png?sas' alt='jetpack joyride'>
+		<h3>jetpack joyride</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/worlds-hardest-game.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/worlds-hardest-game.png?sas' alt='worlds hardest game'>
+		<h3>worlds hardest game</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/raftwars.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/raftwars.png?sas' alt='raft wars'>
+		<h3>raft wars</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/riddleschooltransfer.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/riddleschooltransfer.png?sas' alt='riddle school transfer'>
+		<h3>riddle school transfer</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/riddleschooltransfer2.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/riddleschooltransfer2.png?sas' alt='riddle school transfer 2'>
+		<h3>riddle school transfer 2</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/papaswingeria.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/papaswingeria.png?sas' alt='papas wingeria'>
+		<h3>papas wingeria</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/ovo3dimensions.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/ovo3dimensions.png?sas' alt='ovo 3 dimensions'>
+		<h3>ovo 3 dimensions</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/the-impossible-quiz2.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/the-impossible-quiz2.png?sas' alt='the impossible quiz 2'>
+		<h3>the impossible quiz 2</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/sliceofsasha.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/sliceofsasha.png?sas' alt='slice of sasha'>
+		<h3>slice of sasha</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/there-is-no-game.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/there-is-no-game.png?sas' alt='there is no game'>
+		<h3>there is no game</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/riddleschool4.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/riddleschool4.png?sas' alt='riddle school 4'>
+		<h3>riddle school 4</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/papalouie.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/papalouie.png?sas' alt='papalouie'>
+		<h3>papalouie</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/papascheeseria.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/papascheeseria.png?sas' alt='papas cheeseria'>
+		<h3>papas cheeseria</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/fireboy-and-watergirl-4.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/fireboy-and-watergirl-4.png?sas' alt='fireboy and watergirl 4'>
+		<h3>fireboy and watergirl 4</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/shards.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/shards.png?sas' alt='shards'>
+		<h3>shards</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/snake.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/snake.png?sas' alt='snake'>
+		<h3>snake</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/deal-or-no-deal.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/deal-or-no-deal.png?sas' alt='deal or no deal'>
+		<h3>deal or no deal</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/plactions.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/plactions.png?sas' alt='plactions'>
+		<h3>plactions</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/drifthunters.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/drifthunters.png?sas' alt='drift hunters'>
+		<h3>drift hunters</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/bouncinghell.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/bouncinghell.png?sas' alt='bouncing hell'>
+		<h3>bouncing hell</h3>
+		</div>
+</a>
+
+    
+		
+
+ 	
 </div>
+<br>
+ 
+<br>
+
+
+
+ <ul class="ylist" id="gameList">
+ 
+ 
+ 	<li><a href="/go/yohoho.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/_kr/yohoho.png" alt="Yohoho io">
+	<div class="ylist-title">Yohoho io</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	 
+	 
+	 
+ 	<li><a href="/go/paperio2.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/_kr/paperio2.png" alt="Paperio 2">
+	<div class="ylist-title">Paperio 2</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+	
+	
+		
+	<li><a href="/category/car-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/m1i1yy8118lo3.png" alt="subway surfers">
+	<div class="ylist-title">Car Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/skill-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/m9rbnxqjr4urf.png" alt="subway surfers">
+	<div class="ylist-title">Skill Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/running-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/61e11ges5zc9n.png" alt="subway surfers">
+	<div class="ylist-title">Running Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/multiplayer-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/jv69nr4hq6ayq.png" alt="subway surfers">
+	<div class="ylist-title">Multiplayer Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/racing-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/pmvzwlmikt1rv.png" alt="subway surfers">
+	<div class="ylist-title">Racing Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/stickman-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/or1hk9oks5tvd.png" alt="subway surfers">
+	<div class="ylist-title">Stickman Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/puzzle-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/yxup5zjd56afm.png" alt="subway surfers">
+	<div class="ylist-title">Puzzle Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/sport-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/3rxjsbmy6eb16.png" alt="subway surfers">
+	<div class="ylist-title">Sport Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/unblocked-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/8i4tc4g739hce.png" alt="subway surfers">
+	<div class="ylist-title">Unblocked Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/io-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/xa2ovh0zzoxwd.png" alt="subway surfers">
+	<div class="ylist-title">IO Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/action.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/b8nuwe2zlhr2y.png" alt="subway surfers">
+	<div class="ylist-title">Action</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/adventure.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/3ptppu0lcalpj.png" alt="subway surfers">
+	<div class="ylist-title">Adventure</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+
+
+</ul><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+</div>
+
+
+
 
 
 
@@ -256,31 +888,6 @@
 	</div>
 </div>
 
-
-  
-<div class="footer-copyright py-4">
-	<div class="container">
-		 
- &copy; 2024 - Paperio 3 Unblocked School Games		
-		</div>
-</div>
-
- 
- 
- 
-
- 
- <!-- Google tag (gtag.js) -->
-<script async src='https://www.googletagmanager.com/gtag/js?id=G-PY05BQ5V92'></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PY05BQ5V92');
-</script>
- 
- 
  
 
 			<script type="text/javascript">
@@ -288,12 +895,32 @@
 							console.log("skipped");
 							$(".skip_screen").hide();
 							$(".kap").hide();
-							var lesson_link = "https://geometry-lessons.github.io/repo/games/"+atob('ZG9vZGxlanVtcA==');
+							var lesson_link = "https://oc-fatih.github.io/g/"+atob('ZG9vZGxlanVtcA==');
 							$("#lessons-area").attr("src",lesson_link);				
 						}
 						
 						
 			
 			</script>
+			
+			
+			
+
+
+
+ 
+<!-- Google tag (gtag.js) -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-WZYNL1XH2F'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WZYNL1XH2F');
+</script>
+
+
+ 
+				
   </body>
 </html>

@@ -1,0 +1,565 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Racing Games</title>
+	
+<link rel="stylesheet" href="/stil.css?1718971620" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ </head>
+<body>
+
+
+ <style type="text/css">
+.mry_1 {
+    margin-top: 15px !important;
+	    width: 300px;
+    height: 250px;
+	text-align:center;
+	margin:0 auto;
+}
+.mry_2 {
+    margin-top: 15px !important;
+    width: 970px;
+	text-align:center;
+    height: 250px;
+	margin:0 auto;
+}
+</style>
+
+<script>
+	function getScript(src) {
+    var headElm = document.head || document.getElementsByTagName('head')[0];
+    var script = document.createElement("script");
+    var once = true;
+    script.async = "async";
+    script.type = "text/javascript";
+    script.charset = "UTF-8";
+    script.src = src;
+    script.onload = script.onreadystatechange = function() {
+        if (once && (!script.readyState || /loaded|complete/.test(script.readyState))) {
+            once = false;         
+            script.onload = script.onreadystatechange = null;
+			console.log("okeey");
+        }
+    };
+	  headElm.appendChild(script);
+}
+
+ 
+	getScript("https://api.adinplay.com/libs/aiptag/pub/GRL/paperio3.com/tag.min.js");
+ 
+	window.aiptag = window.aiptag || {cmd: []};
+	aiptag.cmd.display = aiptag.cmd.display || [];
+	aiptag.cmd.player = aiptag.cmd.player || [];
+
+	//CMP tool settings
+	aiptag.cmp = {
+		show: true,
+		position: "centered",  //centered, bottom
+		button: true,
+		buttonText: "Privacy settings",
+		buttonPosition: "bottom-left" //bottom-left, bottom-right, top-left, top-right
+	}
+
+	aiptag.cmd.player.push(function() {
+		aiptag.adplayer = new aipPlayer({
+			AD_WIDTH: 960,
+			AD_HEIGHT: 540,
+			AD_DISPLAY: 'center', //default, fullscreen, center, fill
+			LOADING_TEXT: 'loading advertisement',
+			PREROLL_ELEM: function(){return document.getElementById('preroll')},
+			AIP_COMPLETE: function (evt){
+				
+   skip_play();
+ 			},
+			AIP_REMOVE: function ()  {
+				// Here it's safe to remove the PREROLL_ELEM from the page if you want. But it's not recommend.
+			}
+		});
+	});
+	
+	 
+ 
+				function show_preroll() {
+ 					if (typeof aiptag.adplayer !== 'undefined') {
+				 	aiptag.cmd.player.push(function() { aiptag.adplayer.startPreRoll(); });
+					} else {
+				    	
+   skip_play();
+ 
+					}
+				}
+	
+</script>
+
+
+<div id="preroll"></div>
+
+
+
+
+<div class="top_bar">
+<a href="/"><div class="logo">PAPERIO 3</div></a>
+
+ <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search Game...">
+   
+
+	    <div style="display:none;" class="search-results" id="search-results"></div>
+
+
+		</div>
+		
+		
+		
+		
+</div>
+ 
+ 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
+
+ <script>
+        $(document).ready(function() {
+            // JSON verisini yüklenecek değişken
+            let games = [];
+
+            // JSON dosyasını yükle
+            $.getJSON('/j.json', function(data) {
+                games = data;
+            });
+
+            // Arama fonksiyonunu tanımlayalım
+            $('#search-input').on('input', function() {
+                const input = $(this).val().toLowerCase();
+                const resultsContainer = $('#search-results');
+                resultsContainer.empty(); // Önceki sonuçları temizle
+
+                if (input.length >= 2) {
+					$(".search-results").show();
+                    const filteredGames = games.filter(game => game.oyun_adi.toLowerCase().includes(input)).slice(0, 5);
+                    
+                    filteredGames.forEach(game => {
+                        const gameElement = $('<div class="sikik_selo_liste"></div>');
+                        const gameImage = $('<img width="40">').attr('src', `/_kr/${game.oyun_url.toLowerCase()}.png`).attr('alt', game.oyun_adi);
+                        const gameLink = $('<a></a>').attr('href','/go/'+ game.oyun_url+'.html').text(game.oyun_adi);
+                        gameElement.append(gameImage).append(gameLink);
+                        resultsContainer.append(gameElement);
+                    });
+                } else {
+					$(".search-results").hide();
+				}
+            });
+        });
+    </script>  
+	
+	
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7233485374797646" crossorigin="anonymous"></script>
+
+
+
+
+<div class="anne_baslik"><h2>Racing Games</h2></div>
+
+	
+ 
+<div class="katm">
+Racing games offer high-speed thrills and competitive excitement. Players can choose from a variety of vehicles, from sports cars to motorcycles, and race on diverse tracks. These games often feature realistic graphics, detailed environments, and accurate vehicle physics, providing an immersive experience. Racing games can be both single-player and multiplayer, allowing players to race against AI opponents or other players. They often include various modes, such as time trials, championships, and free roam, catering to different play styles. Upgrades and customization options enable players to enhance their vehicles' performance and appearance. The competitive nature of racing games, combined with the satisfaction of mastering driving skills and tracks, makes them a favorite among gamers. In essence, racing games offer a blend of speed, strategy, and skill, delivering an exhilarating gaming experience.</div>
+ 
+  
+         <div id='paperio3-com_300x250_2' class='mry_2'>
+			<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('paperio3-com_300x250_2'); });
+			</script>
+         </div><br>
+
+
+    <div id="listos">
+       		
+
+
+ <a href="/go/drivemad.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/drivemad.png' alt='drive mad'>
+		<h3>drive mad</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/motox3mpoolparty.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/motox3mpoolparty.png' alt='motox 3m pool party'>
+		<h3>motox 3m pool party</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/motox3mspooky.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/motox3mspooky.png' alt='moto x3m spooky'>
+		<h3>moto x3m spooky</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/motox3mwinter.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/motox3mwinter.png' alt='moto x3m winter'>
+		<h3>moto x3m winter</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/motox3m.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/motox3m.png' alt='moto x3m'>
+		<h3>moto x3m</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/motox3m-winter.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/motox3m-winter.png' alt='moto x3m winter'>
+		<h3>moto x3m winter</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/motox3m2.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/motox3m2.png' alt='moto x3m 2'>
+		<h3>moto x3m 2</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/motox3m3.html">
+
+		<div class='list'>
+		<img src='https://oc-fatih.github.io/k/motox3m3.png' alt='moto x3m 3'>
+		<h3>moto x3m 3</h3>
+		</div>
+</a>
+
+    
+		
+
+ <a href="/go/stickman-hook.html">
+
+		<div class='list'>
+		<img src='https://oc-selo.github.io/k/stickman-hook.png' alt='stickman hook'>
+		<h3>stickman hook</h3>
+		</div>
+</a>
+
+    
+		
+
+ 	
+			
+			
+	</div>
+	
+	<br>
+	
+	
+	
+         <div id='paperio3-com_300x250' class='mry_1'>
+			<script type='text/javascript'>
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('paperio3-com_300x250'); });
+			</script>
+         </div>
+	<br>
+	
+
+
+ <ul class="ylist" id="gameList">
+ 
+ 
+ 	<li><a href="/go/yohoho.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/_kr/yohoho.png" alt="Yohoho io">
+	<div class="ylist-title">Yohoho io</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	 
+	 
+	 
+ 	<li><a href="/go/paperio2.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/_kr/paperio2.png" alt="Paperio 2">
+	<div class="ylist-title">Paperio 2</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+	
+	
+		
+	<li><a href="/category/car-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/m1i1yy8118lo3.png" alt="subway surfers">
+	<div class="ylist-title">Car Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/skill-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/m9rbnxqjr4urf.png" alt="subway surfers">
+	<div class="ylist-title">Skill Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/running-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/61e11ges5zc9n.png" alt="subway surfers">
+	<div class="ylist-title">Running Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/multiplayer-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/jv69nr4hq6ayq.png" alt="subway surfers">
+	<div class="ylist-title">Multiplayer Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/racing-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/pmvzwlmikt1rv.png" alt="subway surfers">
+	<div class="ylist-title">Racing Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/stickman-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/or1hk9oks5tvd.png" alt="subway surfers">
+	<div class="ylist-title">Stickman Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/puzzle-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/yxup5zjd56afm.png" alt="subway surfers">
+	<div class="ylist-title">Puzzle Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/sport-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/3rxjsbmy6eb16.png" alt="subway surfers">
+	<div class="ylist-title">Sport Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/unblocked-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/8i4tc4g739hce.png" alt="subway surfers">
+	<div class="ylist-title">Unblocked Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/io-games.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/xa2ovh0zzoxwd.png" alt="subway surfers">
+	<div class="ylist-title">IO Games</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/action.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/b8nuwe2zlhr2y.png" alt="subway surfers">
+	<div class="ylist-title">Action</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+	
+		
+	<li><a href="/category/adventure.html">
+	
+	<div class="ylesson-item">
+	<div class="ylist-lessons">
+	<div class="ylist-info">
+	<img class="yimage" src="/uploads/80x80/3ptppu0lcalpj.png" alt="subway surfers">
+	<div class="ylist-title">Adventure</div>
+	</div>
+	</div>
+	</div>
+	</a>
+	</li>
+	
+	
+
+
+</ul>
+	
+	 <br>
+	 <br>
+	 <br>
+	 <br>
+	 
+	
+	
+			
+
+
+
+ 
+<!-- Google tag (gtag.js) -->
+<script async src='https://www.googletagmanager.com/gtag/js?id=G-WZYNL1XH2F'></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WZYNL1XH2F');
+</script>
+
+
+ 
+	
+</body>
+</html>
+ 
