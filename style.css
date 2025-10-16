@@ -172,6 +172,7 @@ header {
 .popup {
   background: #181818;
   border-radius: 12px;
+  min-height: 500px;
   width: 90%;
   max-width: 1200px;
   box-shadow: 0 0 25px rgba(0,255,200,0.2);
@@ -220,8 +221,7 @@ header {
 }
 .play-center {display: grid;grid-auto-flow: row;justify-content: center;margin: 0 auto;margin-top: 30px;text-align: center;margin-bottom: 0;}
 .selected-thumb {
-  width: 200px;
-  height: 120px;
+  width: 260px;
   margin: 0 auto;
   object-fit: cover;
   border-radius: 20px;
