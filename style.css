@@ -211,7 +211,6 @@ header {
   background: #111;
   margin: 20px auto;
   border-radius: 10px;
-  display: flex;
   align-items: center;
   justify-content: center;
   color: #777;
