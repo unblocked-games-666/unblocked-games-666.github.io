@@ -211,6 +211,7 @@ header {
   background: #111;
   margin: 20px auto;
   border-radius: 10px;
+  display: flex;
   align-items: center;
   justify-content: center;
   color: #777;
@@ -287,4 +288,12 @@ header {
 		translate: 0 0rem;
  
 	}
+}
+
+.class_r{
+	width:100%;
+	display: grid;
+	margin: 0 auto;
+	justify-content: center;
+	margin-top: 20px;
 }

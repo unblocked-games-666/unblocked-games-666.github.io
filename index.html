@@ -61,6 +61,12 @@
     </div>
   </header>
 
+
+ <div class="class_r" id='paperio4-live_970x250'>
+<script type='text/javascript'>
+aiptag.cmd.display.push(function() { aipDisplayTag.display('paperio4-live_970x250'); });
+</script>
+</div>
   <div class="games-grid" id="gamesGrid">
     <p style="text-align:center;width:100%;">Loading games...</p>
   </div>
@@ -81,13 +87,9 @@
     <button class="fs_button" onclick="goFullScreen()">Full Screen</button>
     <button class="fs_button" onclick="openNewWindow()">Open in New Window</button>
   </div>
-      <div class="ad-area" id="adArea">
-		 <div class="class_r" id='paperio4-live_970x250'>
-<script type='text/javascript'>
-aiptag.cmd.display.push(function() { aipDisplayTag.display('paperio4-live_970x250'); });
-</script>
-</div>
-      </div>
+       
+		
+      
       <iframe id="gameFrame"></iframe>
     </div>
   </div>
@@ -163,8 +165,7 @@ function openPopup(url) {
 	currentGameUrl = url;
 	document.getElementById('popupBg').style.display = 'flex';
 	document.getElementById('gameFrame').style.display = 'none';
-	document.getElementById('adArea').style.display = 'flex';
-	document.getElementById('playButton').style.display = 'inline-flex';
+ 	document.getElementById('playButton').style.display = 'inline-flex';
 	document.getElementById('playIcon').innerHTML = '▶';
 	document.getElementById('playText').innerHTML = 'Play';
 	document.getElementById('selectedThumb').style.display = 'inline-block';
@@ -186,8 +187,7 @@ document.getElementById('playButton').addEventListener('click', async () => {
   const iframe = document.getElementById('gameFrame');
   iframe.src = `https://math-76.lol/games/${currentGameUrl}`;
   iframe.style.display = 'block';
-  document.getElementById('adArea').style.display = 'none';
-  document.getElementById('playButton').style.display = 'none';
+   document.getElementById('playButton').style.display = 'none';
   document.getElementById('selectedThumb').style.display = 'none';
   document.getElementById('selectedTitle').style.display = 'none';
   document.getElementById('iframeControls').style.display = 'flex';
