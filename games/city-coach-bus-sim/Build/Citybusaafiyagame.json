@@ -1,0 +1,13 @@
+{
+"companyName": "GamRizer",
+"productName": " Coach Bus Simulation Game",
+"dataUrl": "Citybusaafiyagame.data.unityweb",
+"asmCodeUrl": "Citybusaafiyagame.asm.code.unityweb",
+"asmMemoryUrl": "Citybusaafiyagame.asm.memory.unityweb",
+"asmFrameworkUrl": "Citybusaafiyagame.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Light",
+"backgroundColor": "#828080"
+}
