@@ -1,6 +1,7 @@
 function playAd() {
 	
   return new Promise(resolve => {
+	   show_videoad();
     console.log("ad started");
       setTimeout(() => {
       console.log("rb!");
@@ -8,6 +9,6 @@ function playAd() {
     }, 800);
   });
   
-  show_videoad();
+ 
 }
 
