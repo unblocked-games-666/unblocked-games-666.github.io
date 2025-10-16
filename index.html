@@ -184,7 +184,7 @@ document.getElementById('playButton').addEventListener('click', async () => {
   document.getElementById('playText').innerHTML = '';
   await playAd(); 
   const iframe = document.getElementById('gameFrame');
-  iframe.src = `https://math-76.lol/games/${currentGameUrl}/index.html`;
+  iframe.src = `https://math-76.lol/games/${currentGameUrl}`;
   iframe.style.display = 'block';
   document.getElementById('adArea').style.display = 'none';
   document.getElementById('playButton').style.display = 'none';
@@ -231,7 +231,7 @@ function open_new_tab(tab){
 }
 
 function openNewWindow() {
-	open_new_tab(`https://math-76.lol/games/${currentGameUrl}/index.html`);
+	open_new_tab(`https://math-76.lol/games/${currentGameUrl}`);
 }
     loadGames();
   </script>
